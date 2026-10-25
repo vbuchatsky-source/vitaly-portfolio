@@ -1,12 +1,12 @@
-// להוספת פרויקט: הוסף אובייקט חדש למערך (ותמונה לתיקיית img/)
+// Add a simulator: push a new object (image goes in img/)
 window.PROJECTS = [
-  { title: "עיצוב הסלון", tag: "עיצוב פנים", color: "#FF6B1A",
+  { title: "Living Room Designer", tag: "Interior · Visualization", color: "#FF6B1A",
     url: "https://vbuchatsky-source.github.io/salon-sim/", img: "img/salon.jpg",
-    desc: "מעצב סלון שעובד על התמונות האמיתיות של הסלון: סגנונות מוכנים (סקנדינבי, תעשייתי, בוהו, ים תיכוני ועוד), החלפת רצפה, קירות, קיר מודגש, ספה, וילונות ותאורה, עם השוואת לפני/אחרי והורדה ב-HD." },
-  { title: "סימולטור הלמינציה", tag: "מכונה · תלת-ממד", color: "#38E1FF",
+    desc: "Room designer that works on real photos of an actual living room: preset styles (Scandinavian, industrial, boho, Mediterranean and more), swappable flooring, walls, accent wall, sofa, curtains and lighting, with before/after comparison and HD export." },
+  { title: "Lamination Simulator", tag: "Machine · 3D", color: "#38E1FF",
     url: "https://vbuchatsky-source.github.io/lamination-sim/", img: "img/lamination.jpg",
-    desc: "סימולציית קונספט למנגנון ציפוי צינורות עם טבעת חום: ציר ליניארי עם בורג כדורי וציר סיבוב עם סרוו, צ'אק וזנב. חישוב פסיעת הליקס וזמן מחזור, פירוק מכלולים, X-ray, חתך והסברים הנדסיים." },
-  { title: "סימולטור חיתוך וסימון צינורות", tag: "אוטומציה · חדש", color: "#38E1FF",
+    desc: "Concept simulation of a heat-ring pipe-coating mechanism: ball-screw linear axis and servo-driven rotary axis with chuck and tailstock. Helix pitch and cycle-time calculation, exploded assemblies, X-ray, section view and engineering notes." },
+  { title: "Pipe Cutting & Marking Simulator", tag: "Automation · New", color: "#38E1FF",
     url: "https://vbuchatsky-source.github.io/pipe-cutter-sim/", img: "img/pipe.jpg",
-    desc: "מכונה אוטומטית לעיגול קצה, סימון סרגל בלייזר פייבר וחיתוך צינורות ל-100 מ\"מ. מתכונים לפי חומר, פרמטרים, תחנות, סיכונים ונתוני תפוקה, עם 19 רכיבים מסומנים ופירוק מכלולים." }
+    desc: "Automated cell for tube-end rounding, fiber-laser ruler marking and cutting to 100 mm. Material-based recipes, parameters, stations, risk analysis and throughput data, with 19 labeled components and exploded assemblies." }
 ];

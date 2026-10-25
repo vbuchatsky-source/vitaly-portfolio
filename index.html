@@ -1,12 +1,12 @@
-<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>EngUp · ויטאלי בוצ'אצקי · הנדסת מערכות ומכונות</title>
-<meta name="description" content="EngUp – ויטאלי בוצ'אצקי, מהנדס מערכות ומכונות, מוביל R&D ו-NPI במכשור רפואי. סימולטורים הנדסיים אינטראקטיביים.">
+<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EngUp · Vitaly Buchatsky · Mechanical &amp; Systems Engineer</title>
+<meta name="description" content="EngUp — Vitaly Buchatsky, mechanical &amp; systems engineer. 15+ years of electromechanical medical device R&amp;D and NPI. Interactive engineering simulators and design portfolio.">
 <meta name="theme-color" content="#05070A"><link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Rubik:wght@600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Rubik:wght@600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#05070A;--p:#0B1016;--ln:#1A2430;--tx:#C9D4DF;--hi:#F2F6FA;--mu:#6E7F90;--ac:#38E1FF;--or:#FF6B1A;--m:'JetBrains Mono',monospace}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.7 Heebo,sans-serif;overflow-x:hidden}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.7 Inter,sans-serif;overflow-x:hidden}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(#38e1ff0b 1px,transparent 1px),linear-gradient(90deg,#38e1ff0b 1px,transparent 1px),linear-gradient(#38e1ff05 1px,transparent 1px),linear-gradient(90deg,#38e1ff05 1px,transparent 1px);background-size:120px 120px,120px 120px,24px 24px,24px 24px}
 body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(0deg,#fff0 0 3px,#ffffff04 3px 4px)}
 main,nav,footer{position:relative;z-index:1}
@@ -21,17 +21,17 @@ nav ul a{color:var(--tx);text-decoration:none;font-family:var(--m);font-size:12p
 .hero{padding:70px 0 40px;position:relative;min-height:88vh;display:flex;align-items:center}
 .hg{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
 .hero h1{font-size:clamp(42px,8vw,86px);line-height:1.02;letter-spacing:-.01em;margin:18px 0}
-.hero h1 em{font-style:normal;display:block;font-size:.42em;font-weight:600;color:var(--ac);font-family:var(--m);letter-spacing:.04em;margin-top:12px;direction:ltr;text-align:right}
+.hero h1 em{font-style:normal;display:block;font-size:.42em;font-weight:600;color:var(--ac);font-family:var(--m);letter-spacing:.04em;margin-top:12px;}
 .lead{font-size:clamp(17px,2vw,20px);font-weight:300;max-width:620px;color:var(--tx)}
 .lead b{color:var(--hi);font-weight:500}
-.btn{display:inline-flex;gap:10px;align-items:center;padding:13px 22px;font:600 13px var(--m);letter-spacing:.1em;text-decoration:none;border:1px solid var(--ac);color:var(--bg);background:var(--ac);margin:8px 0 0 10px;clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);transition:.25s}
+.btn{display:inline-flex;gap:10px;align-items:center;padding:13px 22px;font:600 13px var(--m);letter-spacing:.1em;text-decoration:none;border:1px solid var(--ac);color:var(--bg);background:var(--ac);margin:8px 10px 0 0;clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);transition:.25s}
 .btn:hover{box-shadow:0 0 30px #38e1ff66;transform:translateY(-2px)}.btn.o{background:transparent;color:var(--ac)}
 .hud{position:relative;aspect-ratio:1;max-width:440px;width:100%;margin:auto}
 .hud svg{width:100%;height:100%;overflow:visible}.rot{transform-origin:200px 200px;animation:r 40s linear infinite}.rot2{transform-origin:200px 200px;animation:r 22s linear infinite reverse}@keyframes r{to{transform:rotate(360deg)}}
 .corner{position:absolute;width:16px;height:16px;border:1px solid var(--ac)}.c1{top:0;right:0;border-width:1px 1px 0 0}.c2{top:0;left:0;border-width:1px 0 0 1px}.c3{bottom:0;right:0;border-width:0 1px 1px 0}.c4{bottom:0;left:0;border-width:0 0 1px 1px}
 .tel{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--ln);background:#0b1016cc;margin-top:50px}
-.tel div{padding:18px 20px;border-left:1px solid var(--ln)}.tel div:last-child{border-left:0}
-.tel b{display:block;font:600 clamp(24px,3.4vw,38px) var(--m);color:var(--hi);direction:ltr;text-align:right}.tel b i{font-style:normal;color:var(--ac)}
+.tel div{padding:18px 20px;border-right:1px solid var(--ln);min-width:0}.tel div:last-child{border-right:0}.tel .m{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tel b{display:block;font:600 clamp(24px,3.4vw,38px) var(--m);color:var(--hi)}.tel b i{font-style:normal;color:var(--ac)}
 section{padding:90px 0;border-top:1px solid var(--ln)}
 .sh{display:flex;align-items:baseline;gap:16px;margin-bottom:12px;flex-wrap:wrap}.sh .m{color:var(--ac);font-size:13px}
 h2{font-size:clamp(28px,4.5vw,44px)}.sub{color:var(--mu);margin:0 0 40px;max-width:640px}
@@ -47,25 +47,43 @@ h2{font-size:clamp(28px,4.5vw,44px)}.sub{color:var(--mu);margin:0 0 40px;max-wid
 .add{border:1px dashed var(--ln);display:flex;align-items:center;justify-content:center;min-height:200px;text-align:center}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:50px}
 .spec{border:1px solid var(--ln);background:var(--p)}.spec div{display:flex;justify-content:space-between;gap:16px;padding:12px 16px;border-bottom:1px solid var(--ln)}.spec div:last-child{border:0}
-.spec span:last-child{color:var(--hi);text-align:left}
-.tl{position:relative;padding-right:24px;border-right:1px solid var(--ln)}
-.tl div{position:relative;margin-bottom:26px}.tl div:before{content:"";position:absolute;right:-29px;top:8px;width:9px;height:9px;background:var(--bg);border:1px solid var(--ac);transform:rotate(45deg)}
+.spec span:last-child{color:var(--hi);text-align:right}
+.tl{position:relative;padding-left:24px;border-left:1px solid var(--ln)}
+.tl div{position:relative;margin-bottom:26px}.tl div:before{content:"";position:absolute;left:-29px;top:8px;width:9px;height:9px;background:var(--bg);border:1px solid var(--ac);transform:rotate(45deg)}
 .tl div:first-child:before{background:var(--ac);box-shadow:0 0 12px var(--ac)}
-.tl b{color:var(--hi);font-size:18px;font-family:Rubik}.tl .m{display:block;direction:ltr;text-align:right}
+.tl b{color:var(--hi);font-size:18px;font-family:Rubik}.tl .m{display:block}
 .ct a{display:flex;justify-content:space-between;align-items:center;padding:20px;border:1px solid var(--ln);background:var(--p);color:var(--hi);text-decoration:none;margin-bottom:12px;transition:.25s;font-family:var(--m);font-size:15px}
 .ct a:hover{border-color:var(--ac);color:var(--ac)}
 footer{border-top:1px solid var(--ln);padding:26px 0}footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
-@media(max-width:820px){.hg,.cols{grid-template-columns:1fr}.hud{max-width:300px;order:-1}.hero{min-height:0;padding-top:40px}nav ul{display:none}.tel{grid-template-columns:1fr 1fr}.tel div:nth-child(2){border-left:0}.tel div:nth-child(-n+2){border-bottom:1px solid var(--ln)}.grid{grid-template-columns:1fr}section{padding:64px 0}}
+
+.mb{display:none;background:none;border:1px solid var(--ln);color:var(--ac);width:40px;height:40px;cursor:pointer;font:600 18px var(--m)}
+.dg{margin-bottom:56px;border:1px solid var(--ln);background:#0b1016cc}
+.dgh{display:grid;grid-template-columns:1.2fr 1fr;gap:0;border-bottom:1px solid var(--ln)}
+.dgh>div{padding:22px 24px}.dgh>div+div{border-left:1px solid var(--ln)}
+.dgh h3{font-size:clamp(20px,2.6vw,28px);margin:6px 0 10px}.dgh p{margin:0;font-weight:300;font-size:15px}
+.dgh .id{color:var(--c)}.dgh .spec{border:0;background:none}.dgh .spec div{padding:9px 0}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px;background:#070a0e;grid-auto-flow:dense}
+.gal button{all:unset;cursor:zoom-in;position:relative;background:#070a0e;aspect-ratio:4/3;overflow:hidden;display:block}
+.gal button:first-child{grid-column:span 2;grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:.6s;filter:saturate(.9)}
+.gal button:hover img,.gal button:focus-visible img{transform:scale(1.06);filter:none}
+.gal button:focus-visible{outline:2px solid var(--c);outline-offset:-2px}
+.gal span{position:absolute;left:0;right:0;bottom:0;padding:22px 10px 8px;background:linear-gradient(transparent,#05070Aee);font:11px var(--m);letter-spacing:.08em;text-transform:uppercase;color:var(--tx)}
+.lb{position:fixed;inset:0;z-index:100;background:#03050Af2;display:none;align-items:center;justify-content:center;flex-direction:column;padding:56px 16px 20px}
+.lb.on{display:flex}.lb img{max-width:100%;max-height:calc(100vh - 130px);object-fit:contain;border:1px solid var(--ln)}
+.lb p{margin:12px 0 0;text-align:center}.lb button{position:absolute;background:#0b1016;border:1px solid var(--ln);color:var(--ac);width:46px;height:46px;font:20px var(--m);cursor:pointer}
+.lb .x{top:10px;right:10px}.lb .pv{left:10px;top:50%}.lb .nx{right:10px;top:50%}
+@media(max-width:820px){.mb{display:block}nav .st{display:none}nav ul.op{display:flex;position:absolute;top:60px;left:0;right:0;flex-direction:column;gap:0;background:#05070Af5;border-bottom:1px solid var(--ln)}nav ul.op a{display:block;padding:16px 20px;border-top:1px solid var(--ln)}.dgh{grid-template-columns:1fr}.dgh>div+div{border-left:0;border-top:1px solid var(--ln)}.gal{grid-template-columns:1fr 1fr}.lb .pv,.lb .nx{top:auto;bottom:14px}.hg,.cols{grid-template-columns:1fr}.hud{max-width:300px;order:-1}.hero{min-height:0;padding-top:40px}nav ul{display:none}.tel{grid-template-columns:1fr 1fr}.tel div:nth-child(2){border-right:0}.tel div:nth-child(-n+2){border-bottom:1px solid var(--ln)}.tel div{padding:14px}.tel .m{font-size:10px;letter-spacing:.04em}.grid{grid-template-columns:1fr}section{padding:64px 0}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style></head><body>
-<nav><div class="w"><a href="#"><img src="logo.svg" alt="EngUp"></a><ul><li><a href="#projects">01 // מודולים</a></li><li><a href="#about">02 // מהנדס</a></li><li><a href="#contact">03 // קשר</a></li></ul><span class="st m"><i class="dot"></i>SYS ONLINE</span></div></nav>
+<nav><div class="w"><a href="#"><img src="logo.svg" alt="EngUp"></a><ul id="nm"><li><a href="#projects">01 // SIMULATORS</a></li><li><a href="#designs">02 // PROJECTS</a></li><li><a href="#about">03 // ENGINEER</a></li><li><a href="#contact">04 // CONTACT</a></li></ul><span class="st m"><i class="dot"></i>SYS ONLINE</span><button class="mb" id="mb" aria-label="Menu" aria-expanded="false" aria-controls="nm">☰</button></div></nav>
 <main>
 <header class="hero"><div class="w"><div class="hg"><div>
-<div class="m" dir="ltr" style="text-align:right">MECHANICAL &amp; SYSTEMS ENGINEER · R&amp;D · NPI //</div>
-<h1>ויטאלי בוצ'אצקי<em>ENGINEERING · UP</em></h1>
-<p class="lead">מעל <b>15 שנה</b> של תכנון מכשור רפואי אלקטרו-מכני – מהשרטוט ב-SolidWorks ועד קו ייצור מאושר <b>FDA ו-CE</b>. היום אני בונה סימולטורים הנדסיים תלת-ממדיים למכונות ואוטומציה, שאפשר לפתוח ולבדוק בדפדפן.</p>
-<a class="btn" href="#projects">פתח מודולים ›</a><a class="btn o" href="#contact">צור קשר</a></div>
+<div class="m">MECHANICAL &amp; SYSTEMS ENGINEER · R&amp;D · NPI //</div>
+<h1>Vitaly Buchatsky<em>ENGINEERING · UP</em></h1>
+<p class="lead"><b>15+ years</b> engineering electromechanical medical devices — from the first SolidWorks sketch to production lines released under <b>ISO 13485, FDA and CE</b>. Today I also build interactive 3D simulators for machines and automation that run right in the browser.</p>
+<a class="btn" href="#projects">Launch simulators ›</a><a class="btn o" href="#designs">View projects</a></div>
 <div class="hud" aria-hidden="true"><i class="corner c1"></i><i class="corner c2"></i><i class="corner c3"></i><i class="corner c4"></i>
 <svg viewBox="0 0 400 400" fill="none" stroke="#38E1FF">
 <g class="rot" stroke-opacity=".35"><circle cx="200" cy="200" r="170" stroke-dasharray="2 6"/><path d="M200 22v20M200 358v20M22 200h20M358 200h20"/></g>
@@ -76,33 +94,44 @@ footer{border-top:1px solid var(--ln);padding:26px 0}footer .w{display:flex;just
 <path d="M60 200H140M260 200h80M200 60v80M200 260v80" stroke-opacity=".3"/>
 <g font-family="JetBrains Mono" font-size="10" fill="#6E7F90" stroke="none"><text x="236" y="80">Ø140.00</text><text x="290" y="196">X 0.000</text><text x="70" y="196">Y 0.000</text><text x="206" y="356">TOL ±0.01</text></g>
 </svg></div></div>
-<div class="tel"><div><span class="m">EXPERIENCE</span><b><span class="cnt" data-n="15">15</span><i>+</i> YRS</b></div><div><span class="m">MEDTECH COMPANIES</span><b class="cnt" data-n="4">4</b></div><div><span class="m">QUALITY SYSTEM</span><b>ISO<i> </i>13485</b></div><div><span class="m">REGULATORY</span><b>FDA<i>·</i>CE</b></div></div>
+<div class="tel"><div><span class="m">EXPERIENCE</span><b><span class="cnt" data-n="15">15</span><i>+</i> YRS</b></div><div><span class="m">MEDTECH COS.</span><b class="cnt" data-n="4">4</b></div><div><span class="m">QUALITY SYSTEM</span><b>ISO<i> </i>13485</b></div><div><span class="m">REGULATORY</span><b>FDA<i>·</i>CE</b></div></div>
 </div></header>
-<section id="projects"><div class="w"><div class="sh"><span class="m">01 //</span><h2>מודולים הנדסיים</h2></div><p class="sub">סימולטורים אינטראקטיביים שבניתי – כל אחד מתועד כמו גיליון מפרט. לחצו, פרקו מכלולים ובדקו בעצמכם.</p><div class="grid" id="grid"></div></div></section>
-<section id="about"><div class="w"><div class="sh"><span class="m">02 //</span><h2>פרופיל המהנדס</h2></div><p class="sub">מהנדס מערכות ומוביל R&amp;D ו-NPI: תכנון מוצרים רפואיים אלקטרו-מכניים, הקמת קווי ייצור, ניהול ECO ועמידה בתקני ISO 13485, FDA ו-CE.</p>
+<section id="projects"><div class="w"><div class="sh"><span class="m">01 //</span><h2>Engineering Simulators</h2></div><p class="sub">Interactive simulators I built, each documented like a spec sheet. Open one, explode the assemblies and inspect every mechanism yourself.</p><div class="grid" id="grid"></div></div></section>
+<section id="designs"><div class="w"><div class="sh"><span class="m">02 //</span><h2>Projects &amp; Designs</h2></div><p class="sub">Hardware from the bench: test fixtures, medical wearables, tooling, aerodynamics and consumer products. Click any image to inspect it full-size.</p><div id="dgs"></div></div></section>
+<section id="about"><div class="w"><div class="sh"><span class="m">03 //</span><h2>Engineer Profile</h2></div><p class="sub">Systems engineer and R&amp;D / NPI leader: electromechanical medical product design, production-line build-out (leading 7 technicians and 2 engineers at Medasense), ECO and configuration management, and compliance with ISO 13485, FDA and CE.</p>
 <div class="cols"><div class="tl">
 <div><span class="m">2021 — NOW</span><b>Medasense</b> · R&amp;D &amp; NPI Leader</div>
 <div><span class="m">2020 — 2021</span><b>Innovalve Bio-Medical</b> · NPI Leader</div>
 <div><span class="m">2012 — 2020</span><b>ART Medical</b> · R&amp;D &amp; NPI Leader</div>
 <div><span class="m">2011 — 2012</span><b>Inseal Medical</b> · Mechanical Engineer</div>
-<div><span class="m">2008 — 2025</span><b>פרילנס</b> · יועץ ומתכנן SolidWorks</div></div>
+<div><span class="m">2008 — 2025</span><b>Freelance</b> · R&amp;D / NPI Consultant &amp; SolidWorks Designer</div></div>
 <div class="spec">
-<div><span class="m">M.Sc.</span><span>הנדסה וניהול, אפקה (בהצטיינות)</span></div>
-<div><span class="m">B.Sc.</span><span>הנדסה רפואית, אפקה</span></div>
-<div><span class="m">TECH.</span><span>הנדסאי מכונות, שבח מופת</span></div>
-<div><span class="m">CAD / VIS</span><span dir="ltr">SolidWorks · Keyshot</span></div>
-<div><span class="m">OPS</span><span dir="ltr">Priority ERP · Monday · Visio</span></div>
-<div><span class="m">LANG</span><span>עברית · אנגלית · רוסית</span></div></div></div></div></section>
-<section id="contact"><div class="w"><div class="sh"><span class="m">03 //</span><h2>פתיחת ערוץ</h2></div><p class="sub">בת ים, ישראל · זמין לפרויקטים של תכנון מכני, NPI וסימולציה.</p>
-<div class="cols ct"><div><a href="mailto:vbuchatsky@gmail.com"><span>vbuchatsky@gmail.com</span><span class="m">EMAIL ›</span></a><a href="tel:+972547866830"><span dir="ltr">+972 54 786 6830</span><span class="m">PHONE ›</span></a></div>
-<div><a href="https://vit.base44.app" target="_blank" rel="noopener"><span>קורות חיים מלאים</span><span class="m">CV ›</span></a></div></div></div></section>
+<div><span class="m">M.Sc.</span><span>Engineering &amp; Management, Afeka — with honors</span></div>
+<div><span class="m">B.Sc.</span><span>Medical Engineering, Afeka</span></div>
+<div><span class="m">TECH.</span><span>Practical Mechanical Engineer, Shevach Moffet</span></div>
+<div><span class="m">CAD / VIS</span><span>SolidWorks · Keyshot</span></div>
+<div><span class="m">OPS</span><span>Priority ERP · Monday · Visio</span></div>
+<div><span class="m">LANG</span><span>Hebrew · English · Russian</span></div></div></div></div></section>
+<section id="contact"><div class="w"><div class="sh"><span class="m">04 //</span><h2>Open a Channel</h2></div><p class="sub">Bat Yam, Israel · Available for mechanical design, NPI and simulation projects.</p>
+<div class="cols ct"><div><a href="mailto:vbuchatsky@gmail.com"><span>vbuchatsky@gmail.com</span><span class="m">EMAIL ›</span></a><a href="tel:+972547866830"><span>+972 54 786 6830</span><span class="m">PHONE ›</span></a></div>
+<div><a href="https://vit.base44.app" target="_blank" rel="noopener"><span>Full CV</span><span class="m">CV ›</span></a></div></div></div></section>
 </main>
 <footer><div class="w"><span class="m">© 2026 EngUp · Vitaly Buchatsky</span><span class="m">BUILD 2.0 · TLV 32.0°N 34.7°E</span></div></footer>
-<script src="projects.js"></script>
+<script src="projects.js"></script><script src="designs.js"></script>
 <script>
-const g=document.getElementById('grid');g.innerHTML=PROJECTS.map((p,i)=>`<article class="card" style="--c:${p.color||'#38E1FF'}"><div class="ch"><span class="m">MOD-${String(i+1).padStart(2,'0')}</span><span class="m">${p.tag||''}</span></div><a class="im" href="${p.url}" target="_blank" rel="noopener"><img src="${p.img}" alt="${p.title}" loading="lazy"></a><div class="cb"><h3>${p.title}</h3><p>${p.desc}</p><a class="btn" href="${p.url}" target="_blank" rel="noopener">הפעל סימולטור ›</a></div></article>`).join('')+`<div class="add m">MOD-${String(PROJECTS.length+1).padStart(2,'0')} // IN DEVELOPMENT</div>`;
+const g=document.getElementById('grid');g.innerHTML=PROJECTS.map((p,i)=>`<article class="card" style="--c:${p.color||'#38E1FF'}"><div class="ch"><span class="m">MOD-${String(i+1).padStart(2,'0')}</span><span class="m">${p.tag||''}</span></div><a class="im" href="${p.url}" target="_blank" rel="noopener"><img src="${p.img}" alt="${p.title}" loading="lazy"></a><div class="cb"><h3>${p.title}</h3><p>${p.desc}</p><a class="btn" href="${p.url}" target="_blank" rel="noopener">Launch simulator ›</a></div></article>`).join('')+`<div class="add m">MOD-${String(PROJECTS.length+1).padStart(2,'0')} // IN DEVELOPMENT</div>`;
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const FLAT=[];document.getElementById('dgs').innerHTML=DESIGNS.map(d=>`<article class="dg" style="--c:${d.color}"><div class="dgh"><div><span class="m id">${d.id} // ${esc(d.tag)}</span><h3>${esc(d.title)}</h3><p>${esc(d.desc)}</p></div><div class="spec">${d.spec.map(([k,v])=>`<div><span class="m">${k}</span><span>${esc(v)}</span></div>`).join('')}<div><span class="m">FIGURES</span><span>${d.imgs.length}</span></div></div></div><div class="gal">${d.imgs.map(([f,c],j)=>{const n=FLAT.push({f,c:`${d.id} · FIG.${String(j+1).padStart(2,'0')}${c?' — '+c:''}`,t:d.title})-1;return `<button data-i="${n}" aria-label="${esc(d.title)} figure ${j+1}"><img src="img/designs/${f}.jpg" alt="${esc(d.title)}${c?' — '+esc(c):''}" loading="lazy">${c?`<span>${esc(c)}</span>`:''}</button>`}).join('')}</div></article>`).join('');
+const lb=document.createElement('div');lb.className='lb';lb.setAttribute('role','dialog');lb.innerHTML='<button class="x" aria-label="Close">✕</button><button class="pv" aria-label="Previous">‹</button><img alt=""><p class="m"></p><button class="nx" aria-label="Next">›</button>';document.body.appendChild(lb);
+let cur=0;const show=i=>{cur=(i+FLAT.length)%FLAT.length;const x=FLAT[cur];lb.querySelector('img').src=`img/designs/${x.f}.jpg`;lb.querySelector('img').alt=x.t;lb.querySelector('p').textContent=x.t+' · '+x.c;lb.classList.add('on');document.body.style.overflow='hidden'};
+const hide=()=>{lb.classList.remove('on');document.body.style.overflow=''};
+document.getElementById('dgs').addEventListener('click',e=>{const b=e.target.closest('button[data-i]');if(b)show(+b.dataset.i)});
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('x'))hide();else if(e.target.classList.contains('pv'))show(cur-1);else if(e.target.classList.contains('nx'))show(cur+1)});
+addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')hide();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+let tx=0;lb.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)show(cur+(d<0?1:-1))});
+const mb=document.getElementById('mb'),nm=document.getElementById('nm');mb.onclick=()=>{const o=nm.classList.toggle('op');mb.setAttribute('aria-expanded',o);mb.textContent=o?'✕':'☰'};nm.addEventListener('click',e=>{if(e.target.tagName==='A'){nm.classList.remove('op');mb.textContent='☰';mb.setAttribute('aria-expanded',false)}});
 const red=matchMedia('(prefers-reduced-motion: reduce)').matches;
-document.querySelectorAll('.sh,.sub,.card,.add,.tl div,.spec,.ct a,.tel').forEach(e=>e.classList.add('rv'));
+document.querySelectorAll('.sh,.sub,.card,.add,.tl div,.cols>.spec,.ct a,.tel,.dg').forEach(e=>e.classList.add('rv'));
 const io=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)return;x.target.classList.add('in');io.unobserve(x.target);x.target.querySelectorAll?.('.cnt').forEach(c=>{if(red)return;const n=+c.dataset.n;let t=0;const s=()=>{t++;c.textContent=Math.round(n*t/30);if(t<30)requestAnimationFrame(s)};s()})}),{threshold:.12});
 document.querySelectorAll('.rv').forEach(e=>io.observe(e));
 if(!red){const h=document.querySelector('.hud');addEventListener('scroll',()=>{h.style.transform=`translateY(${scrollY*.15}px)`},{passive:true})}
