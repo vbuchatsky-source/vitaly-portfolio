@@ -1,8 +1,5 @@
 // Add a simulator: push a new object (image goes in img/)
 window.PROJECTS = [
-  { title: "Living Room Designer", tag: "Interior · Visualization", color: "#FF6B1A",
-    url: "https://vbuchatsky-source.github.io/salon-sim/", img: "img/salon.jpg",
-    desc: "Room designer that works on real photos of an actual living room: preset styles (Scandinavian, industrial, boho, Mediterranean and more), swappable flooring, walls, accent wall, sofa, curtains and lighting, with before/after comparison and HD export." },
   { title: "Lamination Simulator", tag: "Machine · 3D", color: "#38E1FF",
     url: "https://vbuchatsky-source.github.io/lamination-sim/", img: "img/lamination.jpg",
     desc: "Concept simulation of a heat-ring pipe-coating mechanism: ball-screw linear axis and servo-driven rotary axis with chuck and tailstock. Helix pitch and cycle-time calculation, exploded assemblies, X-ray, section view and engineering notes." },
