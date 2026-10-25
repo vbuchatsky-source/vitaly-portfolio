@@ -1,92 +1,109 @@
 <!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ויטאלי בוצ'אצקי · מהנדס מערכות ופרויקטים</title>
-<meta name="description" content="ויטאלי בוצ'אצקי – מהנדס מערכות, מוביל R&D ו-NPI. סימולטורים וכלים שאני בונה.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Rubik:wght@500;700;800&display=swap" rel="stylesheet">
+<title>EngUp · ויטאלי בוצ'אצקי · הנדסת מערכות ומכונות</title>
+<meta name="description" content="EngUp – ויטאלי בוצ'אצקי, מהנדס מערכות ומכונות, מוביל R&D ו-NPI במכשור רפואי. סימולטורים הנדסיים אינטראקטיביים.">
+<meta name="theme-color" content="#05070A"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Rubik:wght@600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--teal:#0A88BB;--red:#E63D37;--yel:#F8DA36;--org:#E97141;--grn:#79A77A;--ink:#444;--sky:#F2F8FD}
-*{box-sizing:border-box}body{margin:0;font-family:Heebo,sans-serif;color:#333;background:#fff;line-height:1.6}
-h1,h2,h3{font-family:Rubik,sans-serif;color:var(--ink);margin:0}a{color:var(--teal)}
-.w{max-width:1100px;margin:auto;padding:0 20px}
-nav{position:sticky;top:0;background:#fffe;backdrop-filter:blur(8px);z-index:9;border-bottom:1px solid #eee}
-nav .w{display:flex;justify-content:space-between;align-items:center;height:58px}
-.logo{font:800 22px Rubik;color:var(--ink);text-decoration:none}.logo b{color:var(--teal)}
-nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}nav ul a{color:var(--ink);text-decoration:none;font-weight:500}
-.chev{color:var(--yel);font-weight:800;letter-spacing:-2px;text-shadow:0 0 1px #c9a800}
-.hero{background:var(--sky);padding:64px 0 0;overflow:hidden}
-.kick{font:700 13px Rubik;letter-spacing:1px;color:var(--teal)}
-.hero h1{font-size:clamp(34px,7vw,60px);line-height:1.1;margin:10px 0}.hero h1 span{color:var(--teal)}
-.hero p{font-size:18px;max-width:620px}
-.btn{display:inline-block;background:var(--teal);color:#fff;padding:12px 22px;border-radius:999px;text-decoration:none;font:700 16px Rubik;margin:6px 0 6px 8px}
-.btn.o{background:#fff;color:var(--teal);border:2px solid var(--teal)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:34px 0}
-.stats div{background:#fff;border-radius:16px;padding:14px;text-align:center;box-shadow:0 2px 10px #0a88bb14}
-.stats b{display:block;font:800 24px Rubik;color:var(--ink)}
-.hands{display:flex;justify-content:center;gap:2vw;height:70px;margin-top:20px}
-.hands i{width:42px;border-radius:21px 21px 0 0;display:block}
-section{padding:60px 0}h2{font-size:32px;margin-bottom:8px}.sub{margin:0 0 28px;color:#666}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:24px}
-.card{border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 6px 24px #0002;display:flex;flex-direction:column;border-top:6px solid var(--c)}
-.card img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;display:block;background:#eee}
-.card .b{padding:18px;display:flex;flex-direction:column;flex:1}.card h3{font-size:21px}
-.tag{font:700 12px Rubik;color:var(--c)}.card p{flex:1;margin:8px 0 16px}
-.card .btn{background:var(--c);align-self:flex-start;margin:0}
-.about{background:var(--sky)}.cols{display:grid;grid-template-columns:1fr 1fr;gap:30px}
-.tl div{border-right:4px solid var(--c);padding:4px 14px;margin-bottom:14px;background:#fff;border-radius:10px}
-.tl small{color:#777}
-.contact a.box{display:block;padding:16px;border-radius:14px;background:var(--sky);text-decoration:none;color:var(--ink);font-weight:700;margin-bottom:10px}
-footer{text-align:center;padding:24px;color:#888;font-size:14px}
-@media(max-width:700px){nav ul{display:none}.stats{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr}.hands i{width:28px}}
-
-body{overflow-x:hidden}
-.hero{position:relative;background:radial-gradient(1200px 500px at 90% -10%,#d9eefa,transparent),var(--sky);padding:90px 0 0}
-.blob{position:absolute;border-radius:50%;filter:blur(50px);opacity:.35;animation:fl 14s ease-in-out infinite alternate;z-index:0}
-@keyframes fl{to{transform:translate(40px,-30px) scale(1.15)}}
-.hero .w{position:relative;z-index:1}
-.hgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
-.hero h1{font-size:clamp(40px,8vw,78px)}
-.hero h1 span{background:linear-gradient(90deg,var(--teal),#6A328B,var(--red),var(--org));-webkit-background-clip:text;background-clip:text;color:transparent;background-size:300%;animation:gs 8s linear infinite}
-@keyframes gs{to{background-position:300%}}
-.stack{position:relative;height:440px}
-.stack img{position:absolute;width:78%;border-radius:16px;box-shadow:0 20px 50px #0003;border:4px solid #fff;transition:transform .5s}
-.stack img:nth-child(1){top:0;left:0;transform:rotate(-6deg)}.stack img:nth-child(2){top:90px;left:22%;transform:rotate(4deg)}.stack img:nth-child(3){top:190px;left:6%;transform:rotate(-2deg)}
-.stack:hover img:nth-child(1){transform:rotate(-10deg) translate(-20px,-10px)}.stack:hover img:nth-child(3){transform:rotate(2deg) translateY(20px)}
-.hands i{animation:wave 2.4s ease-in-out infinite;transform-origin:bottom}.hands i:nth-child(2n){animation-delay:.4s}.hands i:nth-child(3n){animation-delay:.8s}
-@keyframes wave{50%{transform:scaleY(1.15)}}
-.btn{transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px #0003}
-.card{transition:transform .35s,box-shadow .35s}.card:hover{transform:translateY(-8px);box-shadow:0 20px 44px #0003}
-.card>a{overflow:hidden;display:block;position:relative}.card img{transition:transform .6s}.card:hover img{transform:scale(1.07)}
-.card>a:after{content:"▶ נסו עכשיו";position:absolute;inset:auto 12px 12px auto;background:#fffe;color:var(--ink);font:700 13px Rubik;padding:6px 12px;border-radius:99px;opacity:0;transform:translateY(8px);transition:.3s}
-.card:hover>a:after{opacity:1;transform:none}
-.rv{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
-@media(max-width:800px){.hgrid{grid-template-columns:1fr}.stack{height:260px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+:root{--bg:#05070A;--p:#0B1016;--ln:#1A2430;--tx:#C9D4DF;--hi:#F2F6FA;--mu:#6E7F90;--ac:#38E1FF;--or:#FF6B1A;--m:'JetBrains Mono',monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.7 Heebo,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(#38e1ff0b 1px,transparent 1px),linear-gradient(90deg,#38e1ff0b 1px,transparent 1px),linear-gradient(#38e1ff05 1px,transparent 1px),linear-gradient(90deg,#38e1ff05 1px,transparent 1px);background-size:120px 120px,120px 120px,24px 24px,24px 24px}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(0deg,#fff0 0 3px,#ffffff04 3px 4px)}
+main,nav,footer{position:relative;z-index:1}
+h1,h2,h3{font-family:Rubik,sans-serif;color:var(--hi);margin:0}a{color:var(--ac)}
+.m{font-family:var(--m);letter-spacing:.08em;text-transform:uppercase;font-size:12px;color:var(--mu)}
+.w{max-width:1160px;margin:auto;padding:0 20px}
+nav{position:sticky;top:0;background:#05070acc;backdrop-filter:blur(10px);border-bottom:1px solid var(--ln);z-index:9}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav img{height:28px;display:block}nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+nav ul a{color:var(--tx);text-decoration:none;font-family:var(--m);font-size:12px;letter-spacing:.1em}nav ul a:hover{color:var(--ac)}
+.st{display:flex;align-items:center;gap:8px}.dot{width:7px;height:7px;border-radius:50%;background:#3dff9a;box-shadow:0 0 8px #3dff9a;animation:bl 2s infinite}@keyframes bl{50%{opacity:.3}}
+.hero{padding:70px 0 40px;position:relative;min-height:88vh;display:flex;align-items:center}
+.hg{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(42px,8vw,86px);line-height:1.02;letter-spacing:-.01em;margin:18px 0}
+.hero h1 em{font-style:normal;display:block;font-size:.42em;font-weight:600;color:var(--ac);font-family:var(--m);letter-spacing:.04em;margin-top:12px;direction:ltr;text-align:right}
+.lead{font-size:clamp(17px,2vw,20px);font-weight:300;max-width:620px;color:var(--tx)}
+.lead b{color:var(--hi);font-weight:500}
+.btn{display:inline-flex;gap:10px;align-items:center;padding:13px 22px;font:600 13px var(--m);letter-spacing:.1em;text-decoration:none;border:1px solid var(--ac);color:var(--bg);background:var(--ac);margin:8px 0 0 10px;clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);transition:.25s}
+.btn:hover{box-shadow:0 0 30px #38e1ff66;transform:translateY(-2px)}.btn.o{background:transparent;color:var(--ac)}
+.hud{position:relative;aspect-ratio:1;max-width:440px;width:100%;margin:auto}
+.hud svg{width:100%;height:100%;overflow:visible}.rot{transform-origin:200px 200px;animation:r 40s linear infinite}.rot2{transform-origin:200px 200px;animation:r 22s linear infinite reverse}@keyframes r{to{transform:rotate(360deg)}}
+.corner{position:absolute;width:16px;height:16px;border:1px solid var(--ac)}.c1{top:0;right:0;border-width:1px 1px 0 0}.c2{top:0;left:0;border-width:1px 0 0 1px}.c3{bottom:0;right:0;border-width:0 1px 1px 0}.c4{bottom:0;left:0;border-width:0 0 1px 1px}
+.tel{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--ln);background:#0b1016cc;margin-top:50px}
+.tel div{padding:18px 20px;border-left:1px solid var(--ln)}.tel div:last-child{border-left:0}
+.tel b{display:block;font:600 clamp(24px,3.4vw,38px) var(--m);color:var(--hi);direction:ltr;text-align:right}.tel b i{font-style:normal;color:var(--ac)}
+section{padding:90px 0;border-top:1px solid var(--ln)}
+.sh{display:flex;align-items:baseline;gap:16px;margin-bottom:12px;flex-wrap:wrap}.sh .m{color:var(--ac);font-size:13px}
+h2{font-size:clamp(28px,4.5vw,44px)}.sub{color:var(--mu);margin:0 0 40px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:22px}
+.card{background:var(--p);border:1px solid var(--ln);display:flex;flex-direction:column;position:relative;transition:.35s}
+.card:hover{border-color:var(--c);transform:translateY(-6px);box-shadow:0 20px 60px -20px var(--c)}
+.ch{display:flex;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--ln)}.ch .m{font-size:11px}.ch .m:first-child{color:var(--c)}
+.card .im{display:block;position:relative;overflow:hidden;border-bottom:1px solid var(--ln)}
+.card img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;display:block;filter:saturate(.85) contrast(1.05);transition:.6s}.card:hover img{transform:scale(1.05);filter:none}
+.card .im:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,#0b1016)}
+.cb{padding:20px;display:flex;flex-direction:column;flex:1}.card h3{font-size:22px;margin:4px 0 8px}.card p{flex:1;margin:0 0 18px;font-size:15px;font-weight:300}
+.card .btn{align-self:flex-start;margin:0;background:transparent;color:var(--c);border-color:var(--c)}.card .btn:hover{background:var(--c);color:var(--bg)}
+.add{border:1px dashed var(--ln);display:flex;align-items:center;justify-content:center;min-height:200px;text-align:center}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.spec{border:1px solid var(--ln);background:var(--p)}.spec div{display:flex;justify-content:space-between;gap:16px;padding:12px 16px;border-bottom:1px solid var(--ln)}.spec div:last-child{border:0}
+.spec span:last-child{color:var(--hi);text-align:left}
+.tl{position:relative;padding-right:24px;border-right:1px solid var(--ln)}
+.tl div{position:relative;margin-bottom:26px}.tl div:before{content:"";position:absolute;right:-29px;top:8px;width:9px;height:9px;background:var(--bg);border:1px solid var(--ac);transform:rotate(45deg)}
+.tl div:first-child:before{background:var(--ac);box-shadow:0 0 12px var(--ac)}
+.tl b{color:var(--hi);font-size:18px;font-family:Rubik}.tl .m{display:block;direction:ltr;text-align:right}
+.ct a{display:flex;justify-content:space-between;align-items:center;padding:20px;border:1px solid var(--ln);background:var(--p);color:var(--hi);text-decoration:none;margin-bottom:12px;transition:.25s;font-family:var(--m);font-size:15px}
+.ct a:hover{border-color:var(--ac);color:var(--ac)}
+footer{border-top:1px solid var(--ln);padding:26px 0}footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+@media(max-width:820px){.hg,.cols{grid-template-columns:1fr}.hud{max-width:300px;order:-1}.hero{min-height:0;padding-top:40px}nav ul{display:none}.tel{grid-template-columns:1fr 1fr}.tel div:nth-child(2){border-left:0}.tel div:nth-child(-n+2){border-bottom:1px solid var(--ln)}.grid{grid-template-columns:1fr}section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style></head><body>
-<nav><div class="w"><a class="logo" href="#">V<b>B</b><span class="chev">»</span></a><ul><li><a href="#projects">פרויקטים</a></li><li><a href="#about">אודות</a></li><li><a href="#contact">צור קשר</a></li></ul></div></nav>
-<header class="hero"><div class="blob" style="width:380px;height:380px;background:var(--yel);top:-80px;left:-80px"></div><div class="blob" style="width:300px;height:300px;background:var(--teal);bottom:40px;right:-60px;animation-delay:-5s"></div><div class="w"><div class="hgrid"><div>
-<div class="kick"><span class="chev">»</span> SYSTEM ENGINEER · R&amp;D &amp; NPI SPECIALIST</div>
-<h1>ויטאלי <span>בוצ'אצקי</span></h1>
-<p>מהנדס שבונה כלים שאפשר לגעת בהם: סימולטורים תלת-ממדיים למכונות ואוטומציה, ועיצוב חללים על תמונות אמיתיות. מעל 15 שנה בתכנון מכשור רפואי אלקטרו-מכני · Medasense · ART Medical · Innovalve. כאן אני מציג את הסימולטורים והכלים שאני בונה.</p>
-<a class="btn" href="#projects">לפרויקטים »</a><a class="btn o" href="#contact">צור קשר</a></div><a class="stack" href="#projects" aria-label="פרויקטים"><img src="img/salon.jpg" alt=""><img src="img/lamination.jpg" alt=""><img src="img/pipe.jpg" alt=""></a></div>
-<div class="stats"><div><b>15+</b>שנות ניסיון</div><div><b>4</b>חברות רפואיות</div><div><b>ISO 13485</b>מוסמך</div><div><b>FDA &amp; CE</b>רגולציה</div></div>
-<div class="hands" aria-hidden="true"><i style="background:var(--red);height:60px"></i><i style="background:var(--yel);height:70px"></i><i style="background:var(--org);height:55px"></i><i style="background:var(--grn);height:66px"></i><i style="background:var(--teal);height:58px"></i><i style="background:#6A328B;height:64px"></i></div>
+<nav><div class="w"><a href="#"><img src="logo.svg" alt="EngUp"></a><ul><li><a href="#projects">01 // מודולים</a></li><li><a href="#about">02 // מהנדס</a></li><li><a href="#contact">03 // קשר</a></li></ul><span class="st m"><i class="dot"></i>SYS ONLINE</span></div></nav>
+<main>
+<header class="hero"><div class="w"><div class="hg"><div>
+<div class="m" dir="ltr" style="text-align:right">MECHANICAL &amp; SYSTEMS ENGINEER · R&amp;D · NPI //</div>
+<h1>ויטאלי בוצ'אצקי<em>ENGINEERING · UP</em></h1>
+<p class="lead">מעל <b>15 שנה</b> של תכנון מכשור רפואי אלקטרו-מכני – מהשרטוט ב-SolidWorks ועד קו ייצור מאושר <b>FDA ו-CE</b>. היום אני בונה סימולטורים הנדסיים תלת-ממדיים למכונות ואוטומציה, שאפשר לפתוח ולבדוק בדפדפן.</p>
+<a class="btn" href="#projects">פתח מודולים ›</a><a class="btn o" href="#contact">צור קשר</a></div>
+<div class="hud" aria-hidden="true"><i class="corner c1"></i><i class="corner c2"></i><i class="corner c3"></i><i class="corner c4"></i>
+<svg viewBox="0 0 400 400" fill="none" stroke="#38E1FF">
+<g class="rot" stroke-opacity=".35"><circle cx="200" cy="200" r="170" stroke-dasharray="2 6"/><path d="M200 22v20M200 358v20M22 200h20M358 200h20"/></g>
+<g class="rot2"><circle cx="200" cy="200" r="140" stroke-opacity=".6" stroke-dasharray="120 30 10 30"/></g>
+<circle cx="200" cy="200" r="100" stroke-opacity=".25"/>
+<g id="gear" stroke-width="1.5"><circle cx="200" cy="200" r="62"/><circle cx="200" cy="200" r="18" stroke="#FF6B1A"/></g>
+<g class="rot" stroke-width="6" stroke-opacity=".8"><circle cx="200" cy="200" r="70" stroke-dasharray="11 11"/></g>
+<path d="M60 200H140M260 200h80M200 60v80M200 260v80" stroke-opacity=".3"/>
+<g font-family="JetBrains Mono" font-size="10" fill="#6E7F90" stroke="none"><text x="236" y="80">Ø140.00</text><text x="290" y="196">X 0.000</text><text x="70" y="196">Y 0.000</text><text x="206" y="356">TOL ±0.01</text></g>
+</svg></div></div>
+<div class="tel"><div><span class="m">EXPERIENCE</span><b><span class="cnt" data-n="15">15</span><i>+</i> YRS</b></div><div><span class="m">MEDTECH COMPANIES</span><b class="cnt" data-n="4">4</b></div><div><span class="m">QUALITY SYSTEM</span><b>ISO<i> </i>13485</b></div><div><span class="m">REGULATORY</span><b>FDA<i>·</i>CE</b></div></div>
 </div></header>
-<section id="projects"><div class="w"><h2><span class="chev">»</span> פרויקטים וסימולטורים</h2><p class="sub">כלים אינטראקטיביים שבניתי – לחצו ונסו בעצמכם. עוד בדרך.</p><div class="grid" id="grid"></div></div></section>
-<section id="about" class="about"><div class="w cols">
-<div><h2><span class="chev">»</span> אודות</h2>
-<p>מהנדס מערכות ומוביל R&amp;D ו-NPI עם מעל 15 שנות ניסיון בתכנון מוצרים רפואיים אלקטרו-מכניים, הקמת קווי ייצור, ניהול ECO ועמידה בתקני ISO 13485, FDA ו-CE.</p>
-<p><b>השכלה:</b> M.Sc. בהנדסה וניהול, מכללת אפקה (בהצטיינות) · B.Sc. בהנדסה רפואית, מכללת אפקה · הנדסאי מכונות, מכללת שבח מופת.</p>
-<p><b>כלים:</b> SolidWorks · Keyshot · Priority ERP · Monday · Office/Visio<br><b>שפות:</b> עברית · אנגלית · רוסית</p></div>
-<div class="tl">
-<div style="--c:var(--teal)"><b>Medasense</b> – R&amp;D &amp; NPI Leader <small>2021–היום</small></div>
-<div style="--c:var(--red)"><b>Innovalve Bio-Medical</b> – NPI Leader <small>2020–2021</small></div>
-<div style="--c:var(--org)"><b>ART Medical</b> – R&amp;D &amp; NPI Leader <small>2012–2020</small></div>
-<div style="--c:var(--grn)"><b>Inseal Medical</b> – Mechanical Engineer <small>2011–2012</small></div>
-<div style="--c:var(--yel)"><b>פרילנס</b> – יועץ ומתכנן SolidWorks <small>2008–2025</small></div>
-</div></div></section>
-<section id="contact" class="contact"><div class="w"><h2><span class="chev">»</span> צור קשר</h2><p class="sub">בת ים, ישראל</p>
-<div class="cols"><div><a class="box" href="mailto:vbuchatsky@gmail.com">✉️ vbuchatsky@gmail.com</a><a class="box" href="tel:+972547866830" dir="ltr" style="text-align:right">📞 +972 54 786 6830</a></div>
-<div><a class="box" href="https://vit.base44.app" target="_blank">📄 קורות חיים מלאים ופרויקטים נוספים »</a></div></div></div></section>
-<footer>© 2026 ויטאלי בוצ'אצקי</footer>
+<section id="projects"><div class="w"><div class="sh"><span class="m">01 //</span><h2>מודולים הנדסיים</h2></div><p class="sub">סימולטורים אינטראקטיביים שבניתי – כל אחד מתועד כמו גיליון מפרט. לחצו, פרקו מכלולים ובדקו בעצמכם.</p><div class="grid" id="grid"></div></div></section>
+<section id="about"><div class="w"><div class="sh"><span class="m">02 //</span><h2>פרופיל המהנדס</h2></div><p class="sub">מהנדס מערכות ומוביל R&amp;D ו-NPI: תכנון מוצרים רפואיים אלקטרו-מכניים, הקמת קווי ייצור, ניהול ECO ועמידה בתקני ISO 13485, FDA ו-CE.</p>
+<div class="cols"><div class="tl">
+<div><span class="m">2021 — NOW</span><b>Medasense</b> · R&amp;D &amp; NPI Leader</div>
+<div><span class="m">2020 — 2021</span><b>Innovalve Bio-Medical</b> · NPI Leader</div>
+<div><span class="m">2012 — 2020</span><b>ART Medical</b> · R&amp;D &amp; NPI Leader</div>
+<div><span class="m">2011 — 2012</span><b>Inseal Medical</b> · Mechanical Engineer</div>
+<div><span class="m">2008 — 2025</span><b>פרילנס</b> · יועץ ומתכנן SolidWorks</div></div>
+<div class="spec">
+<div><span class="m">M.Sc.</span><span>הנדסה וניהול, אפקה (בהצטיינות)</span></div>
+<div><span class="m">B.Sc.</span><span>הנדסה רפואית, אפקה</span></div>
+<div><span class="m">TECH.</span><span>הנדסאי מכונות, שבח מופת</span></div>
+<div><span class="m">CAD / VIS</span><span dir="ltr">SolidWorks · Keyshot</span></div>
+<div><span class="m">OPS</span><span dir="ltr">Priority ERP · Monday · Visio</span></div>
+<div><span class="m">LANG</span><span>עברית · אנגלית · רוסית</span></div></div></div></div></section>
+<section id="contact"><div class="w"><div class="sh"><span class="m">03 //</span><h2>פתיחת ערוץ</h2></div><p class="sub">בת ים, ישראל · זמין לפרויקטים של תכנון מכני, NPI וסימולציה.</p>
+<div class="cols ct"><div><a href="mailto:vbuchatsky@gmail.com"><span>vbuchatsky@gmail.com</span><span class="m">EMAIL ›</span></a><a href="tel:+972547866830"><span dir="ltr">+972 54 786 6830</span><span class="m">PHONE ›</span></a></div>
+<div><a href="https://vit.base44.app" target="_blank" rel="noopener"><span>קורות חיים מלאים</span><span class="m">CV ›</span></a></div></div></div></section>
+</main>
+<footer><div class="w"><span class="m">© 2026 EngUp · Vitaly Buchatsky</span><span class="m">BUILD 2.0 · TLV 32.0°N 34.7°E</span></div></footer>
 <script src="projects.js"></script>
-<script>document.getElementById('grid').innerHTML=PROJECTS.map(p=>`<article class="card" style="--c:${p.color||'#0A88BB'}"><a href="${p.url}" target="_blank"><img src="${p.img}" alt="${p.title}" loading="lazy"></a><div class="b"><span class="tag">${p.tag||''}</span><h3>${p.title}</h3><p>${p.desc}</p><a class="btn" href="${p.url}" target="_blank" rel="noopener">פתח סימולטור »</a></div></article>`).join('');document.querySelectorAll('section h2,.sub,.card,.tl div,.contact .box,.stats div').forEach(e=>e.classList.add('rv'));const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(e=>io.observe(e))</script>
-</body></html>
+<script>
+const g=document.getElementById('grid');g.innerHTML=PROJECTS.map((p,i)=>`<article class="card" style="--c:${p.color||'#38E1FF'}"><div class="ch"><span class="m">MOD-${String(i+1).padStart(2,'0')}</span><span class="m">${p.tag||''}</span></div><a class="im" href="${p.url}" target="_blank" rel="noopener"><img src="${p.img}" alt="${p.title}" loading="lazy"></a><div class="cb"><h3>${p.title}</h3><p>${p.desc}</p><a class="btn" href="${p.url}" target="_blank" rel="noopener">הפעל סימולטור ›</a></div></article>`).join('')+`<div class="add m">MOD-${String(PROJECTS.length+1).padStart(2,'0')} // IN DEVELOPMENT</div>`;
+const red=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('.sh,.sub,.card,.add,.tl div,.spec,.ct a,.tel').forEach(e=>e.classList.add('rv'));
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)return;x.target.classList.add('in');io.unobserve(x.target);x.target.querySelectorAll?.('.cnt').forEach(c=>{if(red)return;const n=+c.dataset.n;let t=0;const s=()=>{t++;c.textContent=Math.round(n*t/30);if(t<30)requestAnimationFrame(s)};s()})}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+if(!red){const h=document.querySelector('.hud');addEventListener('scroll',()=>{h.style.transform=`translateY(${scrollY*.15}px)`},{passive:true})}
+</script></body></html>
